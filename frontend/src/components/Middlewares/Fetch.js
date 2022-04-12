@@ -15,18 +15,17 @@ export const get_all_messages_ = async () => {
 	}
 };
 
-export const post_add_message_ = async () => {
+export const delete_all_messages_ = async () => {
 	let headersList = {
-		Accept: '*/*'
+		Accept: '*/*',
+		'User-Agent': 'Thunder Client (https://www.thunderclient.com)'
 	};
 
 	try {
-		const pre = await fetch(`${base_url}/add_message`, {
-			method: 'POST',
+		return await fetch('http://localhost:4000/delete_all', {
+			method: 'DELETE',
 			headers: headersList
 		});
-		const post = await pre.json();
-		return post;
 	} catch (error) {
 		return error;
 	}

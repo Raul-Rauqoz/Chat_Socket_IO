@@ -1,11 +1,12 @@
 import React from 'react';
-import { socket } from '../Events/Socket';
+import { get_connect_, get_messages_ } from '../Events/Socket';
 
-const User = ({ user, setUser_, setLogin_, setData_ }) => {
+const User = ({ user, setUser_, setLogin_ }) => {
 	const submit_ = () => {
 		if (user !== '') {
 			setLogin_(true);
-			socket.emit('get_messages_f');
+			get_connect_(user);
+			get_messages_();
 		} else {
 			alert('Ingresa tu nick');
 		}

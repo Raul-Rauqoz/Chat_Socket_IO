@@ -1,0 +1,10 @@
+[
+	{
+		"title": "get messages",
+		"link": "https://app.swaggerhub.com/apis/Rauqoz/get_messages/0.1"
+	},
+	{
+		"title": "delete messages",
+		"link": "https://app.swaggerhub.com/apis/Rauqoz/delete_messages/0.1"
+	}
+]

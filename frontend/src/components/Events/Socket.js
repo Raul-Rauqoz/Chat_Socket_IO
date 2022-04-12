@@ -8,3 +8,7 @@ export const add_message_ = (data) => {
 export const get_messages_ = () => {
 	socket.emit('get_messages_f');
 };
+
+export const get_connect_ = (data) => {
+	socket.emit('new', data);
+};

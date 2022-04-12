@@ -8,8 +8,9 @@ routes.get('/', (req, res) => {
 routes.get('/messages', (req, res) => {
 	res.status(200).send(all_messages);
 });
-routes.post('/add_message', (req, res) => {
-	res.status(200).send();
+routes.delete('/delete_all', (req, res) => {
+	all_messages.splice(0, all_messages.length);
+	res.status(200).send(all_messages);
 });
 
 module.exports = routes;
