@@ -1,9 +1,9 @@
 describe('Test', () => {
-	it('test messages', () => {
+	it('Test messages', () => {
 		const messages = require('./messages/messages');
 		expect(typeof messages).toBe('object');
 	});
-	it('test users', () => {
+	it('Test users', () => {
 		const users = require('./messages/users');
 		expect(typeof users).toBe('object');
 	});
